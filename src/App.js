@@ -1,14 +1,21 @@
 
 import './App.css';
 
+function AppImage(props) {
+  return ( 
+    <img style={{marginLeft: '10px'}} src={props.url} alt="Placeholder" />
+   );
+}
+
+export {AppImage};
 
 function App() {
   return (
     <div className="App">
     <h1>Website  developer</h1>
-    <img src="https://placehold.co/400" alt="Placeholder" />
-    <img style={{marginLeft: '10px'}} src="https://placehold.co/600x400" alt="Placeholder" />
-    <img style={{marginLeft: '10px'}} src="https://placehold.co/600x400" alt="Placeholder" />
+    <AppImage url={"https://placehold.co/400"}/>
+    <AppImage url={"https://placehold.co/600x400"} />
+
   </div>
   );
 }
