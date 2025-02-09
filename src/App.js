@@ -1,20 +1,17 @@
 
 import './App.css';
+import AppImage, { TitleImage } from './components/AppImage';
 
-function AppImage(props) {
-  return ( 
-    <img style={{marginLeft: '10px'}} src={props.url} alt="Placeholder" />
-   );
-}
 
-export {AppImage};
 
 function App() {
   return (
     <div className="App">
     <h1>Website  developer</h1>
     <AppImage url={"https://placehold.co/400"}/>
+    <TitleImage title={"Image1"}/>
     <AppImage url={"https://placehold.co/600x400"} />
+    <TitleImage title={"Image2"}/>
 
   </div>
   );
