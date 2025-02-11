@@ -1,20 +1,24 @@
 
 import './App.css';
-import AppImage, { TitleImage } from './components/AppImage';
+import AppUserComponent from './components/AppUserComponent';
+
 
 
 
 function App() {
   return (
-    <div className="App">
-    <h1>Website  developer</h1>
-    <AppImage url={"https://placehold.co/400"}/>
-    <TitleImage title={"Image1"}/>
-    <AppImage url={"https://placehold.co/600x400"} />
-    <TitleImage title={"Image2"}/>
+    <div className='App'>
+    <AppUserComponent name="Jai santhosh R" proffession="software developer"/>
+    <AppUserComponent name="Anand nagaraj R" proffession="Bsc Agriculture" />
+    <AppUserComponent name="Rajarajan C" proffession="Advocate"/>
+    <AppUserComponent name="Meenakshi K" proffession="teacher"/>
 
-  </div>
-  );
+    
+    
+    
+
+    </div>
+   );
 }
 
 export default App;
